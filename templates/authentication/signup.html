@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>signup</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>.signup-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        
+        .signup-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 
+        </style>        
+    </head>
+    <body>
+        <form action="/signup" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="signup-form">
+              <h2>Sign Up</h2>
+              <div class="form-group">
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="first_name" required>
+              </div>
+              <div class="form-group">
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="last_name" required>
+              </div>
+              <div class="form-group">
+                <label for="profile">Profile Picture</label>
+                <input type="file" id="profile" name="profile">
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Id</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password1" required>
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm" name="password2" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address Line 1</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              <div class="form-group">
+                <button type="submit">Sign-up</button>
+              </div>
+            </div>
+          </form>
+          
+        <script src="" async defer></script>
+    </body>
+</html>
