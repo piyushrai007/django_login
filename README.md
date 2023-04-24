@@ -51,9 +51,9 @@ python manage.py runserver
 
 Here are some screenshots of the login/signup page:
 
-![Login Page](/screenshots/login.png)
+![Login Page](/media/upload/login.png)
 
-![Signup Page](/screenshots/signup.png)
+![Signup Page](/media/upload/home.png)
 
 ## Contributors
 
