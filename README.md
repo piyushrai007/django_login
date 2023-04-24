@@ -59,9 +59,6 @@ Here are some screenshots of the login/signup page:
 
 This project was built by:
 
-* Your Name (@your-github-username)
-* Additional contributors (if any)
+* Your Name (@piyushrai)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
